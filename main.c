@@ -19,15 +19,12 @@ int main() {
     
  printf("Enter two operands: ");
  scanf("%f %f",&number1, &number2);
-    
-    
+     
     switch (operator) {
         case 'p':
-            result = pow(number1,number2);
-            
+            result = pow(number1,number2);            
             printf("%.1f ˆ %.1f) = %.1f ", number1, number2, result);
-            break;
-            
+            break;           
         case '+':
             result = number1 + number2;
             printf("%.1f + %.1f = %.1f ", number1, number2, result);
@@ -53,8 +50,7 @@ int main() {
             printf("Error! operator is not correct");
             break;
     }
-    return 0;
-    
+    return 0;    
 }
 
 
