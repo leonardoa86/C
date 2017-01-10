@@ -1,0 +1,42 @@
+// Simple example of pointer
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+
+    int num1 = 15;
+    int num2 = 35;
+    
+    //Initalizing pointer p1 and p2 to the address of num1 and num2
+    int *p1 = &num1;
+    int *p2 = &num2;
+    
+    printf("Before:\n");
+    printf("Pointer 1: %u\n", *p1);
+    printf("Pointer 2: %u\n", *p2);
+    printf("Num 1: %u\n", num1);
+    printf("Num 2: %u\n", num2);
+    printf("Address of num1: %p\n", &num1);
+    printf("Address of num2: %p\n ", &num2);
+    
+    //Altering the actual value of num1 and num2 
+    *p1 = 50;
+    *p2 = 5;
+    
+    printf("After:\n");
+    printf("Pointer 1: %u\n", *p1);
+    printf("Pointer 2: %u\n", *p2);
+    printf("Num 1: %u\n", num1);
+    printf("Num 2: %u\n", num2);
+    printf("Address of num1: %p\n", &num1);
+    printf("Address of num2: %p\n", &num2);
+    
+    *p1 = *p2;
+    
+    printf("Pointer 1: %u\n", *p1);
+    printf("Pointer 2: %u\n", *p2);
+    
+    return 0;
+    
+    
+}
