@@ -1,2 +1,9 @@
 # C programming 
-This repository contains my programs that I've been developing to learn and to improve my knowledge in C programming.
+
+The reasons for this repository are:
+- Improve my skills in programming language.
+- Develop interesting projects and help others.
+- Find a job.
+
+To run :
+Copy the code into an IDE and run it. 
